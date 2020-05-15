@@ -83,3 +83,7 @@ $ npm start
 ```
 
 ## Adding Middlewares & Types
+
+## Class is a type in TypeScript
+
+just like type alias and interface

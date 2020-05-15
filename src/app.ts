@@ -1,9 +1,14 @@
 // const express = require('express');
 import express, { Request, Response, NextFunction } from 'express'; // use ES6 import to get type support
+import { json } from 'body-parser'; // import json middleware
 
 import todoRoutes from './routes/todos';
 
 const app = express();
+
+// parse the body of all incoming request and extract any json data,
+// then attach it to the req.body
+app.use(json());
 
 app.use('/todos', todoRoutes);
 
