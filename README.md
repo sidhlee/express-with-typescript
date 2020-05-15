@@ -231,3 +231,7 @@ export const updateTodo: RequestHandler<{ id: string }> = (req, res, next) => {
   res.json({ message: 'updated', updatedTodo: TODOS[todoIndex] });
 };
 ```
+
+## More express type examples
+
+https://github.com/types/express/tree/master/test
